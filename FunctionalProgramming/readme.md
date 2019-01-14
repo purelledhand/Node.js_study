@@ -1,8 +1,8 @@
 ### Functional Programming in Node.js
 
-#### Closures
+### Closures
 
-##### Inner function (closures)이 outer function의 파라미터와 로컬변수에 접근할 수 있음을 보여주는 예제
+#### Inner function (closures)이 outer function의 파라미터와 로컬변수에 접근할 수 있음을 보여주는 예제
 
 ```javascript
 function showName(firstName, lastName) {
@@ -18,7 +18,7 @@ function showName(firstName, lastName) {
 * makeFullName : closure, inner function
 * closure인 makeFullName에서 showName의 파라미터들과 로컬변수에 접근하고 있음
 
-##### outer function이 리턴한 값이 리턴 이후에도 outer function의 data에 접근할 수 있음을 보여주는 예제
+#### outer function이 리턴한 값이 리턴 이후에도 outer function의 data에 접근할 수 있음을 보여주는 예제
 
 ```javascript
 function grandParent(g1, g2) {
@@ -40,4 +40,3 @@ const childFunction = parentFunction(11, 22);
 console.log(childFunction(111, 222));
 // childFunction은 parentFunction으로부터 이미 리턴된 후지만, parentFunction의 파라미터와 로컬 변수에 접근할 수 있다.
 ```
-
