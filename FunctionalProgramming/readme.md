@@ -1,4 +1,4 @@
-### Functional Programming in Node.js
+## Functional Programming in Node.js
 
 ### Closures
 
