@@ -1,8 +1,8 @@
 ### Functional Programming in Node.js
 
-#### closer
+#### Closures
 
-##### Inner function (closer)이 outer function의 파라미터와 로컬변수에 접근할 수 있음을 보여주는 예제
+##### Inner function (closures)이 outer function의 파라미터와 로컬변수에 접근할 수 있음을 보여주는 예제
 
 ```javascript
 function showName(firstName, lastName) {
@@ -14,9 +14,9 @@ function showName(firstName, lastName) {
 }
 ```
 
-* showName : outer function of closer
-* makeFullName : closer, inner function
-* closer인 makeFullName에서 showName의 파라미터들과 로컬변수에 접근하고 있음
+* showName : outer function of closure
+* makeFullName : closure, inner function
+* closure인 makeFullName에서 showName의 파라미터들과 로컬변수에 접근하고 있음
 
 ##### outer function이 리턴한 값이 리턴 이후에도 outer function의 data에 접근할 수 있음을 보여주는 예제
 
